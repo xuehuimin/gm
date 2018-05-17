@@ -1,0 +1,125 @@
+.goods{
+    width:6.4rem;
+    height:100%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.goods .tab_wrap{
+    display: flex;
+    height:100%;
+    background: #FFFFFF;
+    overflow: hidden;
+}
+.goods .tab_wrap .tab_tit{
+    height: 665px;
+    box-sizing: border-box;
+    padding:0 10px;
+    overflow-y: scroll;
+    background-color: #EEEEEE;
+}
+.goods .tab_wrap .tab_tit>a{
+    position: relative;
+    display: block;
+    height: 63px;
+    padding: 17px 0 0;
+    white-space: nowrap;
+    line-height: 24px;
+    color: #757575;
+    text-align: center;
+    font-size: 0.14rem;
+    overflow: hidden
+}
+.goods .tab_wrap .tab_tit>a:after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #e0e0e0;
+}
+.goods .tab_wrap .tab_tit>a p img{
+    width:0.3rem;
+    height:0.3rem;
+    margin: 0 auto;
+}
+.goods .tab_wrap .tab_tit>a.cur{
+    color: #ff3c25;
+}
+.goods .tab_wrap .tab_tit>a.cur:after{
+    height: 3px;
+    background-color: #ff3c25;
+    border-radius: 2px;
+}
+.goods .tab_wrap .tab_box{
+    height: 665px;
+    flex:1;
+    background-color: #EEEEEE;
+    overflow-y: scroll;
+}
+.goods .tab_wrap .tab_box>ul>li{
+    border-top:1px solid #e0e0e0;
+}
+.tab_wrap .tab_box>ul>li .title{
+    display: flex;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    align-items: center;
+    height:.7rem;
+    overflow: hidden;
+    padding: 3.125% 3.125%;
+    background: #f8f8f8;
+}
+.tab_wrap .tab_box>ul>li .title h3{
+    width: 1.9rem;
+    overflow: hidden;
+    white-space: nowrap;
+    line-height: 20px;
+    color: #111;
+    font-size: 0.14rem;
+    font-weight: normal;
+}
+.tab_wrap .tab_box>ul>li .title h3:before{
+    content: '';
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    margin-right: 7px;
+    border-radius: 50%;
+    vertical-align: 1px;
+}
+.tab_wrap .tab_box>ul>li:nth-child(4n+1) .title h3:before{
+     background-color: #ff8a65;
+}
+.tab_wrap .tab_box>ul>li:nth-child(4n+2) .title h3:before{
+     background-color: #4dd0e1;
+}
+.tab_wrap .tab_box>ul>li:nth-child(4n+3) .title h3:before{
+    background-color: #ffc107;
+}
+.tab_wrap .tab_box>ul>li:nth-child(4n+4) .title h3:before{
+    background-color: #ce93d8;
+}
+.tab_wrap .tab_box>ul>li .box{
+    padding:3.125% 3.125%;
+    background: #FFFFFF;
+}
+.tab_wrap .tab_box>ul>li .box>a{
+    float: left;
+    height: 46px;
+    line-height: 46px;
+    color: #212121;
+    font-size: 0.14rem;
+    width:28%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-align: right;
+}
+.tab_wrap .tab_box>ul>li .box>a span{
+    position: relative;
+    text-align: left;
+    display: inline-block;
+    width: 70px;
+    max-width: 72px;
+    overflow: hidden;
+}
